@@ -1,0 +1,19 @@
+{
+  "name": "vorq-docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch-sources.mjs",
+    "dev": "npm run fetch && astro dev",
+    "build": "npm run fetch && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.42.4",
+    "astro": "^7.3.5",
+    "sharp": "^0.35.4",
+    "starlight-links-validator": "^0.26.0",
+    "starlight-llms-txt": "^0.12.0",
+    "starlight-sidebar-topics": "^0.9.0"
+  }
+}

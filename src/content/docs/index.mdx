@@ -1,0 +1,34 @@
+---
+title: VORQ Docs
+description: Build on the VORQ async inference exchange — submit jobs, run a provider, or integrate the contracts.
+template: splash
+hero:
+  tagline: An async inference exchange. Submit jobs, get results, settle on-chain.
+  actions:
+    - text: How VORQ works
+      link: /overview/how-it-works/
+      icon: right-arrow
+    - text: Python quickstart
+      link: /python/
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid>
+  <Card title="Python SDK" icon="seti:python">
+    Submit jobs and batches from Python. OpenAI-compatible. [Get started →](/python/)
+  </Card>
+  <Card title="JavaScript SDK" icon="seti:typescript">
+    The same client surface for Node and browsers. [Get started →](/js/)
+  </Card>
+  <Card title="Provider daemon" icon="rocket">
+    Run `vorqd` and serve jobs from your own inference backend. [Get started →](/provider/)
+  </Card>
+  <Card title="Coordinator API" icon="setting">
+    The HTTP API behind the SDKs. [Reference →](/coordinator/)
+  </Card>
+  <Card title="Contracts" icon="seti:ethereum">
+    Settlement on Base: jobs, providers, asks. [Reference →](/contracts/)
+  </Card>
+</CardGrid>
