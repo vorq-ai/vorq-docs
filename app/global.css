@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/shadcn.css';
+@import 'fumadocs-ui/css/preset.css';
+
+/* The vorq.co light palette as shadcn tokens; shadcn.css maps them onto Fumadocs. */
+:root {
+  --background: #f8f7f2;
+  --foreground: #141413;
+  --card: #fdfcf9;
+  --card-foreground: #141413;
+  --popover: #fdfcf9;
+  --popover-foreground: #141413;
+  --primary: #0f0f0e;
+  --primary-foreground: #f8f7f2;
+  --secondary: rgba(20, 20, 19, 0.05);
+  --secondary-foreground: #141413;
+  --muted: rgba(20, 20, 19, 0.04);
+  --muted-foreground: #5e5d59;
+  --accent: rgba(20, 20, 19, 0.06);
+  --accent-foreground: #141413;
+  --destructive: #c0334a;
+  --border: rgba(20, 20, 19, 0.12);
+  --ring: #9a6a00;
+  --sidebar: #f8f7f2;
+  --sidebar-foreground: #141413;
+  --sidebar-primary: #0f0f0e;
+  --sidebar-primary-foreground: #f8f7f2;
+  --sidebar-accent: rgba(20, 20, 19, 0.05);
+  --sidebar-accent-foreground: #141413;
+  --sidebar-border: rgba(20, 20, 19, 0.12);
+  --sidebar-ring: #9a6a00;
+  color-scheme: light;
+}
+
+@theme {
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+html > body[data-scroll-locked] {
+  margin-right: 0px !important;
+  --removed-body-scroll-bar-size: 0px !important;
+}

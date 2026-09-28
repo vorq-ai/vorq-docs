@@ -1,7 +1,7 @@
 [
-  { "repo": "vorq-client-sdk-python", "slug": "python", "label": "Python SDK", "icon": "seti:python" },
-  { "repo": "vorq-client-sdk-js", "slug": "js", "label": "JavaScript SDK", "icon": "seti:typescript" },
-  { "repo": "vorq-provider-sdk", "slug": "provider", "label": "Provider daemon", "icon": "rocket" },
-  { "repo": "vorq-coordinator-node", "slug": "coordinator", "label": "Coordinator API", "icon": "setting" },
-  { "repo": "vorq-evm-contracts", "slug": "contracts", "label": "Contracts", "icon": "seti:ethereum" }
+  { "repo": "vorq-client-sdk-python", "slug": "python" },
+  { "repo": "vorq-client-sdk-js", "slug": "js" },
+  { "repo": "vorq-provider-sdk", "slug": "provider" },
+  { "repo": "vorq-coordinator-node", "slug": "coordinator" },
+  { "repo": "vorq-evm-contracts", "slug": "contracts" }
 ]

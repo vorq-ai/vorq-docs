@@ -1,8 +1,6 @@
 ---
 title: How VORQ works
 description: The components of the VORQ network and the life of a job.
-sidebar:
-  order: 1
 ---
 
 VORQ is an async inference exchange. Clients submit jobs, independent providers claim and run them, and the result settles on-chain. Every job is submit-and-poll: you get a job id in milliseconds and read the result when it is ready.
@@ -30,10 +28,10 @@ Client SDK (Python / JS)          Provider daemon (vorqd)
 
 | Component | Role |
 |---|---|
-| [Python SDK](/python/) / [JavaScript SDK](/js/) | Submit jobs and batches, read results. Talk only to `/v1/*`. |
-| [Provider daemon](/provider/) | Publishes asks, claims jobs, runs them on your backend, settles. |
-| [Coordinator](/coordinator/) | Serves the API, indexes the chain, relays signed operations and pays their gas. |
-| [Contracts](/contracts/) | The settlement authority: job state, provider registry, ask book. |
+| [Python SDK](/docs/python) / [JavaScript SDK](/docs/js) | Submit jobs and batches, read results. Talk only to `/v1/*`. |
+| [Provider daemon](/docs/provider) | Publishes asks, claims jobs, runs them on your backend, settles. |
+| [Coordinator](/docs/coordinator) | Serves the API, indexes the chain, relays signed operations and pays their gas. |
+| [Contracts](/docs/contracts) | The settlement authority: job state, provider registry, ask book. |
 
 Neither SDK holds an RPC client or sends raw transactions. Each signs its own EIP-712 payloads; the coordinator relays them. The contracts verify every signature, so relaying confers no authority.
 

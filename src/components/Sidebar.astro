@@ -1,9 +1,0 @@
----
-// The topic switcher from starlight-sidebar-topics above the theme's sidebar: both plugins
-// override Sidebar, and each one skips the override when another is already set.
-import Topics from 'starlight-sidebar-topics/components/Sidebar.astro';
-import ThemeSidebar from 'starlight-theme-black/overrides/Sidebar.astro';
----
-
-<Topics />
-<ThemeSidebar><slot /></ThemeSidebar>

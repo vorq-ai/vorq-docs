@@ -1,0 +1,6 @@
+{
+  "title": "Overview",
+  "icon": "BookOpen",
+  "root": true,
+  "pages": ["how-it-works"]
+}

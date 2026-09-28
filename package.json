@@ -4,17 +4,27 @@
   "type": "module",
   "scripts": {
     "fetch": "node scripts/fetch-sources.mjs",
-    "dev": "npm run fetch && astro dev",
-    "build": "npm run fetch && astro build",
-    "preview": "astro preview"
+    "dev": "npm run fetch && next dev",
+    "build": "npm run fetch && next build && node scripts/check-links.mjs",
+    "types:check": "next typegen && tsc --noEmit"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.42.4",
-    "astro": "^7.3.5",
-    "sharp": "^0.35.4",
-    "starlight-links-validator": "^0.26.0",
-    "starlight-llms-txt": "^0.12.0",
-    "starlight-sidebar-topics": "^0.9.0",
-    "starlight-theme-black": "^0.7.1"
+    "fumadocs-core": "16.15.15",
+    "fumadocs-mdx": "15.4.5",
+    "fumadocs-ui": "npm:@fumadocs/base-ui@16.15.15",
+    "lucide-react": "^1.47.0",
+    "next": "16.3.5",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/mdx": "^2.0.14",
+    "@types/node": "^26.6.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2"
   }
 }

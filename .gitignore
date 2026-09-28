@@ -1,8 +1,11 @@
 node_modules/
-dist/
-.astro/
+.next/
+.source/
+out/
+next-env.d.ts
+*.tsbuildinfo
 .DS_Store
 
 # Pulled from the source repos at build time
-src/content/docs/*/
-!src/content/docs/overview/
+content/docs/*
+!content/docs/overview/
